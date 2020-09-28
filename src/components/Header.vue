@@ -1,26 +1,27 @@
 <template>
   <div>
-    <header>
-        <nav id="nav">
-            <ul>
-                <li v-for="item in items" :key="item">
-                    <a :href="item.url" v-if="!item.children">
-                        {{ item.name }}
-                    </a>
-                    <span v-else v-on:mouseover="mouseover" v-on:mouseleave="mouseleave">
-                        {{ item.name }}
-                        <ul class="dropdown" :class="{ isOpen }">
-                            <li v-for="child in item.children" :key="child">
-                                <a :href="child.url">
-                                    {{ child.name }}
-                                </a>
-                            </li>
-                        </ul>
-                    </span>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <v-app-bar
+      prominent
+      src="https://picsum.photos/1920/1080?random"
+    >
+    <template v-slot:img="{ props }">
+      <v-img
+        v-bind="props"
+        gradient="to top right, rgba(19,84,122,.5), rgba(128,208,199,.8)"
+      ></v-img>
+    </template>
+
+    <v-app-bar-nav-icon @click.stop="$store.state.drawer = !$store.state.drawer"></v-app-bar-nav-icon>
+
+    <v-toolbar-title>Power Jumping</v-toolbar-title>
+
+    <v-spacer></v-spacer>
+
+    <v-btn icon>
+      <v-icon>info</v-icon>
+    </v-btn>
+
+    </v-app-bar>
   </div>
 </template>
 
@@ -29,121 +30,11 @@ export default {
   name: 'Header',
 
   data: () => ({
-    isOpen: false,
-    items: [
-      {
-        url: '#home',
-        name: 'Home'
-      },
-      {
-        url: '#about',
-        name: 'About'
-      },
-      {
-        url: '#service',
-        name: 'Service',
-        children: [
-          {
-            url: '#service1',
-            name: 'Service1'
-          },
-          {
-            url: '#service2',
-            name: 'Service2'
-          },
-          {
-            url: '#service3',
-            name: 'Service3'
-          }
-        ]
-      },
-      {
-        url: '#contact',
-        name: 'Contact'
-      }
-    ]
-  }),
 
-  methods: {
-    mouseover: function () {
-      this.isOpen = true
-    },
-    mouseleave: function () {
-      this.isOpen = false
-    }
-  }
+  })
 }
 </script>
 
 <style>
-header {
-    width: 100%;
-    background-color: #007db9;
-}
 
-#nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
-#nav > ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-#nav > ul > li > a {
-    display: block;
-    height: auto;
-    padding: 20px;
-    color: #fff;
-    text-decoration: none;
-}
-
-#nav > ul > li > span {
-    position: relative;
-    display: block;
-    height: auto;
-    padding: 20px;
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-#nav > ul > li > span:after {
-    content: '▼';
-    display: inline-block;
-
-}
-
-.dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: none;
-    padding: 0;
-    list-style-type: none;
-    background-color: #007db9;
-}
-
-.dropdown li {
-    width: 250px;
-    border-bottom: 1px solid #fff;
-}
-
-.dropdown li a {
-    display: block;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
-}
-
-.isOpen {
-    display: block;
-}
 </style>
