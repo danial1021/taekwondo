@@ -17,21 +17,35 @@
 
     <v-spacer></v-spacer>
 
-    <v-btn icon>
+    <!-- infoDialog.vue -->
+    <!-- <v-btn icon @click="showinfo">
       <v-icon>info</v-icon>
-    </v-btn>
+    </v-btn> -->
+    <info-dialog />
 
     </v-app-bar>
   </div>
 </template>
 
 <script>
+import InfoDialog from '@/components/InfoDialog.vue'
+
 export default {
   name: 'Header',
 
   data: () => ({
 
-  })
+  }),
+
+  components: {
+    InfoDialog
+  },
+
+  methods: {
+    // showinfo () {
+    //   console.log('dialog!')
+    // }
+  }
 }
 </script>
 

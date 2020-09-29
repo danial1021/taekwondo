@@ -52,7 +52,7 @@ export default {
       { title: '포토갤러리', icon: 'photo' },
       { title: '비디오갤러리', icon: 'videocam' },
       { title: '오시는길', icon: 'location_on' },
-      { title: '공지사항', icon: 'campaign' }
+      { title: '공지사항', icon: 'notifications' }
     ],
     group: null
   }),
