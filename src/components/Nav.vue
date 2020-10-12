@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-navigation-drawer temporary absolute v-model="$store.state.drawer">
+    <v-navigation-drawer app temporary v-model="$store.state.drawer">
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="title">

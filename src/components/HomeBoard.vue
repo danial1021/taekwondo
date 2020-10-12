@@ -11,10 +11,11 @@
               <span>Word of the Day</span>
               <v-btn
                 class="mx-2"
-                small
+                x-small
                 fab
                 dark
                 color="indigo"
+                style="float:right;"
               >
                 <v-icon dark>
                   mdi-plus
@@ -41,10 +42,11 @@
               <span>Word of the Day</span>
               <v-btn
                 class="mx-2"
-                small
+                x-small
                 fab
                 dark
                 color="indigo"
+                style="float:right;"
               >
                 <v-icon dark>
                   mdi-plus
