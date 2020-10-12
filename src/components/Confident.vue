@@ -1,86 +1,84 @@
 <template>
-  <div class="c_size">
+  <div class="bgc">
     <v-container fluid>
-      <v-layout row wrap>
-        <v-row>
-          <v-col cols="6" xs="6" sm="6" md="3">
-            <v-card
-              class="mx-auto"
-              max-width="344"
-            >
-              <v-card-title>
-                Top western road trips
-              </v-card-title>
+      <v-row>
+        <v-col cols="6" xs="6" sm="6" md="3">
+          <v-card
+            class="mx-auto"
+            max-width="344"
+          >
+            <v-card-title>
+              Top western road trips
+            </v-card-title>
 
-              <v-card-subtitle>
-                1,000 miles of wonder
-              </v-card-subtitle>
+            <v-card-subtitle>
+              1,000 miles of wonder
+            </v-card-subtitle>
 
-              <v-img
-                src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-                sizes="200px"
-              ></v-img>
-            </v-card>
-          </v-col>
-          <v-col cols="6" xs="6" sm="6" md="3">
-            <v-card
-              class="mx-auto"
-              max-width="344"
-            >
-              <v-card-title>
-                Top western road trips
-              </v-card-title>
+            <v-img
+              src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+              sizes="200px"
+            ></v-img>
+          </v-card>
+        </v-col>
+        <v-col cols="6" xs="6" sm="6" md="3">
+          <v-card
+            class="mx-auto"
+            max-width="344"
+          >
+            <v-card-title>
+              Top western road trips
+            </v-card-title>
 
-              <v-card-subtitle>
-                1,000 miles of wonder
-              </v-card-subtitle>
+            <v-card-subtitle>
+              1,000 miles of wonder
+            </v-card-subtitle>
 
-              <v-img
-                src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-                sizes="200px"
-              ></v-img>
-            </v-card>
-          </v-col>
-          <v-col cols="6" xs="6" sm="6" md="3">
-            <v-card
-              class="mx-auto"
-              max-width="344"
-            >
-              <v-card-title>
-                Top western road trips
-              </v-card-title>
+            <v-img
+              src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+              sizes="200px"
+            ></v-img>
+          </v-card>
+        </v-col>
+        <v-col cols="6" xs="6" sm="6" md="3">
+          <v-card
+            class="mx-auto"
+            max-width="344"
+          >
+            <v-card-title>
+              Top western road trips
+            </v-card-title>
 
-              <v-card-subtitle>
-                1,000 miles of wonder
-              </v-card-subtitle>
+            <v-card-subtitle>
+              1,000 miles of wonder
+            </v-card-subtitle>
 
-              <v-img
-                src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-                sizes="200px"
-              ></v-img>
-            </v-card>
-          </v-col>
-          <v-col cols="6" xs="6" sm="6" md="3">
-            <v-card
-              class="mx-auto"
-              max-width="344"
-            >
-              <v-card-title>
-                Top western road trips
-              </v-card-title>
+            <v-img
+              src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+              sizes="200px"
+            ></v-img>
+          </v-card>
+        </v-col>
+        <v-col cols="6" xs="6" sm="6" md="3">
+          <v-card
+            class="mx-auto"
+            max-width="344"
+          >
+            <v-card-title>
+              Top western road trips
+            </v-card-title>
 
-              <v-card-subtitle>
-                1,000 miles of wonder
-              </v-card-subtitle>
+            <v-card-subtitle>
+              1,000 miles of wonder
+            </v-card-subtitle>
 
-              <v-img
-                src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-                sizes="200px"
-              ></v-img>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-layout>
+            <v-img
+              src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+              sizes="200px"
+            ></v-img>
+          </v-card>
+        </v-col>
+      </v-row>
     </v-container>
   </div>
 </template>
@@ -94,9 +92,8 @@ export default {
 }
 </script>
 
-<style>
-.c_size {
+<style scoped>
+.bgc {
   background-color: #612a2a;
-  /* height: 50vh; */
 }
 </style>
