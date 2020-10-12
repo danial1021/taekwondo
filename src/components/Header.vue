@@ -2,6 +2,7 @@
   <div>
     <v-app-bar
       prominent
+      app
       src="https://picsum.photos/1920/1080?random"
     >
     <template v-slot:img="{ props }">

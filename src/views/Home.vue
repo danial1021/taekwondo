@@ -5,6 +5,8 @@
 
     <v-main>
       <Carousels />
+      <Confident />
+      <Theme />
     </v-main>
   </div>
 </template>
@@ -14,6 +16,8 @@
 import Header from '@/components/Header.vue'
 import Nav from '@/components/Nav.vue'
 import Carousels from '@/components/Carousels.vue'
+import Confident from '@/components/Confident.vue'
+import Theme from '@/components/Theme.vue'
 
 export default {
   name: 'Home',
@@ -21,7 +25,9 @@ export default {
   components: {
     Header,
     Nav,
-    Carousels
+    Carousels,
+    Confident,
+    Theme
   },
 
   data: () => ({

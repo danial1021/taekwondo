@@ -61,5 +61,6 @@ export default {
   align-items: center;
   height: 48vh;
   flex-direction: column;
+  position: relative;
 }
 </style>
