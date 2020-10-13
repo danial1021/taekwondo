@@ -8,6 +8,7 @@
       <Confident />
       <Theme />
       <HomeBoard />
+      <Footer />
     </v-main>
   </div>
 </template>
@@ -19,7 +20,8 @@ import Nav from '@/components/Nav.vue'
 import Carousels from '@/components/Carousels.vue'
 import Confident from '@/components/Confident.vue'
 import Theme from '@/components/Theme.vue'
-import HomeBoard from '@/components/HomeBoard'
+import HomeBoard from '@/components/HomeBoard.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'Home',
@@ -30,7 +32,8 @@ export default {
     Carousels,
     Confident,
     Theme,
-    HomeBoard
+    HomeBoard,
+    Footer
   },
 
   data: () => ({
