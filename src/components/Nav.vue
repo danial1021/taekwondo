@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <nav>
     <v-navigation-drawer app temporary v-model="$store.state.drawer">
       <v-list-item>
         <v-list-item-content>
@@ -37,7 +37,7 @@
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
-  </div>
+  </nav>
 </template>
 
 <script>
@@ -46,13 +46,13 @@ export default {
 
   data: () => ({
     items: [
-      { title: '인사말', icon: 'pan_tool' },
-      { title: '관장프로필', icon: 'account_box' },
-      { title: '실내전경', icon: 'home_work' },
-      { title: '포토갤러리', icon: 'photo' },
-      { title: '비디오갤러리', icon: 'videocam' },
-      { title: '오시는길', icon: 'location_on' },
-      { title: '공지사항', icon: 'notifications' }
+      { title: '인사말', icon: 'pan_tool', link: '' },
+      { title: '관장프로필', icon: 'account_box', link: '' },
+      { title: '실내전경', icon: 'home_work', link: '' },
+      { title: '포토갤러리', icon: 'photo', link: '' },
+      { title: '비디오갤러리', icon: 'videocam', link: '' },
+      { title: '오시는길', icon: 'location_on', link: '' },
+      { title: '공지사항', icon: 'notifications', link: '' }
     ],
     group: null
   }),

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <header>
     <v-app-bar
       prominent
       app
@@ -25,7 +25,7 @@
     <info-dialog />
 
     </v-app-bar>
-  </div>
+  </header>
 </template>
 
 <script>
