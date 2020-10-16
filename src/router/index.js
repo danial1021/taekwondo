@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Profile from '../views/Profile.vue'
 import Admin from '../views/Admin.vue'
 
 Vue.use(VueRouter)
@@ -12,9 +13,19 @@ const routes = [
     component: Home
   },
   {
+    path: '/profile',
+    name: 'Profile',
+    component: Profile
+  },
+  {
     path: '/admin',
     name: 'Admin',
     component: Admin
+  },
+  {
+    path: '*',
+    name: '404',
+    component: Home
   }
   // {
   //   path: '/about',
