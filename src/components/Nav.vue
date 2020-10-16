@@ -23,6 +23,7 @@
           <v-list-item
             v-for="item in items"
             :key="item.title"
+            :to="item.link"
             link
             color="primary"
           >
@@ -46,8 +47,9 @@ export default {
 
   data: () => ({
     items: [
-      { title: '인사말', icon: 'pan_tool', link: '' },
-      { title: '관장프로필', icon: 'account_box', link: '' },
+      { title: '메인', icon: 'call_to_action', link: '/' },
+      { title: '인사말', icon: 'pan_tool', link: '/profile' },
+      { title: '관장프로필', icon: 'account_box', link: '/profile' },
       { title: '실내전경', icon: 'home_work', link: '' },
       { title: '포토갤러리', icon: 'photo', link: '' },
       { title: '비디오갤러리', icon: 'videocam', link: '' },

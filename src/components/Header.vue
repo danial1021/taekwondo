@@ -14,7 +14,7 @@
     </template>
 
     <v-spacer></v-spacer>
-    <v-toolbar-title class="ho">파워줄넘기</v-toolbar-title>
+    <v-toolbar-title class="ho" @click="$router.push('/profile')">파워줄넘기</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-title class="ho">실내전경</v-toolbar-title>
     <v-spacer></v-spacer>
@@ -51,9 +51,17 @@
     <v-toolbar-title class="ho">공지사항</v-toolbar-title>
 
     <v-spacer></v-spacer>
+    <v-btn
+      icon
+      color="primary"
+      style="margin-right:30px"
+      @click="$router.push('/')"
+    >
+      메인으로
+    </v-btn>
     <info-dialog />
     </v-app-bar>
-
+<!-- responsive -->
     <v-app-bar
       prominent
       app
@@ -85,8 +93,8 @@ export default {
 
   data: () => ({
     items: [
-      { title: '포토갤러리', links: '' },
-      { title: '영상갤러리', links: '' }
+      { title: '포토갤러리', link: '' },
+      { title: '영상갤러리', link: '' }
     ]
   }),
 
