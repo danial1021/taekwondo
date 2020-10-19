@@ -1,7 +1,7 @@
 <template>
   <v-card
     min-width="100%"
-    min-height="766px"
+    min-height="100%"
     class="mx-auto"
   >
     <v-system-bar

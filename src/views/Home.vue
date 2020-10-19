@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-app>
     <v-main>
       <Carousels />
       <Confident />
@@ -7,7 +7,7 @@
       <HomeBoard />
       <GoTop />
     </v-main>
-  </div>
+  </v-app>
 </template>
 
 <script>

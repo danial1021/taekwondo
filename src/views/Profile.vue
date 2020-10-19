@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <v-app>
     <v-main>
       <ProfileCard />
     </v-main>
-  </div>
+  </v-app>
 </template>
 
 <script>
