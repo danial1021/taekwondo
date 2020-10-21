@@ -1,6 +1,6 @@
 <template>
   <v-card min-height="500px">
-    <v-card-title>관장프로필</v-card-title>
+    <v-card-title>인사말</v-card-title>
     <v-container>
       <v-img
         height="300"
@@ -21,7 +21,7 @@
 <script>
 export default {
   data: () => ({
-    name: 'ProfileCard'
+    name: 'GreetingCard'
   })
 }
 </script>

@@ -13,7 +13,7 @@
                   dark
                 >
                 <div class="a">
-                  <span class="b">파워점핑줄넘기</span>
+                  <span class="b"><h3>파워점핑줄넘기</h3></span>
                 </div>
                 </v-card>
               </v-col>
@@ -47,23 +47,7 @@
           </v-col>
 
           <v-col cols="10">
-            <v-card min-height="500px">
-              <v-card-title>관장프로필</v-card-title>
-              <v-container>
-                <v-img
-                  height="300"
-                  width="100%"
-                  src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
-                ></v-img>
-                <v-card-subtitle>
-                  1,000 miles of wonder
-                </v-card-subtitle>
-
-                <v-card-text>
-                  I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
-                </v-card-text>
-              </v-container>
-            </v-card>
+            <ProfileCard />
           </v-col>
         </v-row>
       </v-container>
@@ -73,13 +57,13 @@
 
 <script>
 // @ is an alias to /src
-// import ProfileCard from '@/components/ProfileCard.vue'
+import ProfileCard from '@/components/ProfileCard.vue'
 
 export default {
   name: 'Profile',
 
   components: {
-    // ProfileCard
+    ProfileCard
   },
 
   data: () => ({
