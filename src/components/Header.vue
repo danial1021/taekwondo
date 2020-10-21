@@ -14,7 +14,7 @@
     </template>
 
     <v-spacer></v-spacer>
-    <v-toolbar-title class="ho" @click="$router.push('/profile')">파워줄넘기</v-toolbar-title>
+    <v-toolbar-title class="ho" @click="$router.push('/greeting')">파워줄넘기</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-title class="ho">실내전경</v-toolbar-title>
     <v-spacer></v-spacer>

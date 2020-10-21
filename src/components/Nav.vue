@@ -48,7 +48,7 @@ export default {
   data: () => ({
     items: [
       { title: '메인', icon: 'call_to_action', link: '/' },
-      { title: '인사말', icon: 'pan_tool', link: '/profile' },
+      { title: '인사말', icon: 'pan_tool', link: '/greeting' },
       { title: '관장프로필', icon: 'account_box', link: '/profile' },
       { title: '실내전경', icon: 'home_work', link: '' },
       { title: '포토갤러리', icon: 'photo', link: '' },

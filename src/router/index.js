@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Profile from '../views/Profile.vue'
+import Greeting from '../views/Greeting.vue'
 import Admin from '../views/Admin.vue'
 
 Vue.use(VueRouter)
@@ -16,6 +17,11 @@ const routes = [
     path: '/profile',
     name: 'Profile',
     component: Profile
+  },
+  {
+    path: '/greeting',
+    name: 'Greeting',
+    component: Greeting
   },
   {
     path: '/admin',

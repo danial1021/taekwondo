@@ -11,6 +11,7 @@
                   style="background-color:#968770"
                   outlined
                   dark
+                  class="mx-auto"
                 >
                 <div class="a">
                   <span class="b">파워점핑줄넘기</span>
@@ -26,6 +27,7 @@
                       text
                       block
                       @click="$router.push('/greeting')"
+                      color="primary"
                     >
                       인사말
                     </v-btn>
@@ -36,7 +38,6 @@
                       text
                       block
                       @click="$router.push('/profile')"
-                      color="primary"
                     >
                       관장프로필
                     </v-btn>
@@ -48,7 +49,7 @@
 
           <v-col cols="10">
             <v-card min-height="500px">
-              <v-card-title>관장프로필</v-card-title>
+              <v-card-title>인사말</v-card-title>
               <v-container>
                 <v-img
                   height="300"
@@ -76,7 +77,7 @@
 // import ProfileCard from '@/components/ProfileCard.vue'
 
 export default {
-  name: 'Profile',
+  name: 'Greeting',
 
   components: {
     // ProfileCard
