@@ -12,11 +12,11 @@
 
 <script>
 // @ is an alias to /src
-import Carousels from '@/components/Carousels.vue'
-import Confident from '@/components/Confident.vue'
-import Theme from '@/components/Theme.vue'
-import HomeBoard from '@/components/HomeBoard.vue'
-import GoTop from '@/components/GoTop.vue'
+import Carousels from '@/components/home/Carousels.vue'
+import Confident from '@/components/home/Confident.vue'
+import Theme from '@/components/home/Theme.vue'
+import HomeBoard from '@/components/home/HomeBoard.vue'
+import GoTop from '@/components/ui/GoTop.vue'
 
 export default {
   name: 'Home',

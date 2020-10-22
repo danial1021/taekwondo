@@ -95,7 +95,7 @@
 </template>
 
 <script>
-import InfoDialog from '@/components/InfoDialog.vue'
+import InfoDialog from '@/components/ui/InfoDialog.vue'
 
 export default {
   name: 'Header',
