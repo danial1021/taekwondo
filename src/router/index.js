@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Profile from '../views/Profile.vue'
 import Greeting from '../views/Greeting.vue'
 import Indoor from '../views/Indoor.vue'
+import Come from '../views/Come.vue'
 import Admin from '../views/Admin.vue'
 
 Vue.use(VueRouter)
@@ -28,6 +29,11 @@ const routes = [
     path: '/indoor',
     name: 'Indoor',
     component: Indoor
+  },
+  {
+    path: '/come',
+    name: 'Come',
+    component: Come
   },
   {
     path: '/admin',

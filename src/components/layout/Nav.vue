@@ -53,7 +53,7 @@ export default {
       { title: '실내전경', icon: 'home_work', link: '/indoor' },
       { title: '포토갤러리', icon: 'photo', link: '' },
       { title: '비디오갤러리', icon: 'videocam', link: '' },
-      { title: '오시는길', icon: 'location_on', link: '' },
+      { title: '오시는길', icon: 'location_on', link: '/come' },
       { title: '공지사항', icon: 'notifications', link: '' }
     ],
     group: null

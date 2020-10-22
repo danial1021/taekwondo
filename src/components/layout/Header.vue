@@ -54,7 +54,11 @@
     </v-menu>
 
     <v-spacer></v-spacer>
-    <v-toolbar-title class="ho">오시는길</v-toolbar-title>
+    <v-toolbar-title class="ho">
+      <router-link class="route" to="/come">
+        오시는길
+      </router-link>
+    </v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-title class="ho">공지사항</v-toolbar-title>
 
