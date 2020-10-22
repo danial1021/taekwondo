@@ -78,7 +78,7 @@
                 <v-col cols="6">
                   <v-container>
                     <div style="border: 10px solid #dddddd">
-                      <!-- <Map /> -->
+                      <Map />
                     </div>
                   </v-container>
                 </v-col>
@@ -94,14 +94,14 @@
 
 <script>
 // @ is an alias to /src
-// import Map from '@/components/ui/Map.vue'
+import Map from '@/components/ui/Map.vue'
 import FixedFooter from '@/components/layout/FixedFooter.vue'
 
 export default {
   name: 'Indoor',
 
   components: {
-    // Map,
+    Map,
     FixedFooter
   },
 
