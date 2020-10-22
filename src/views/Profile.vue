@@ -54,18 +54,21 @@
         </v-row>
       </v-container>
     </v-main>
+    <FixedFooter />
   </v-app>
 </template>
 
 <script>
 // @ is an alias to /src
 import ProfileCard from '@/components/ProfileCard.vue'
+import FixedFooter from '@/components/layout/FixedFooter.vue'
 
 export default {
   name: 'Profile',
 
   components: {
-    ProfileCard
+    ProfileCard,
+    FixedFooter
   },
 
   data: () => ({

@@ -144,16 +144,19 @@
         </v-row>
       </v-container>
     </v-main>
+    <FixedFooter />
   </v-app>
 </template>
 
 <script>
 // @ is an alias to /src
+import FixedFooter from '@/components/layout/FixedFooter.vue'
 
 export default {
   name: 'Indoor',
 
   components: {
+    FixedFooter
   },
 
   data: () => ({

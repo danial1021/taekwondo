@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-main>
+    <v-main style="size:766px">
       <v-container>
         <v-row>
           <v-col cols="2">
@@ -54,18 +54,21 @@
         </v-row>
       </v-container>
     </v-main>
+    <FixedFooter />
   </v-app>
 </template>
 
 <script>
 // @ is an alias to /src
 import GreetingCard from '@/components/GreetingCard.vue'
+import FixedFooter from '@/components/layout/FixedFooter.vue'
 
 export default {
   name: 'Greeting',
 
   components: {
-    GreetingCard
+    GreetingCard,
+    FixedFooter
   },
 
   data: () => ({
