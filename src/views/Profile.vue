@@ -8,7 +8,7 @@
               <v-col cols="12">
                 <v-card
                   min-height="110px"
-                  style="background-color:#968770"
+                  class="card-color"
                   outlined
                   dark
                 >
@@ -25,9 +25,10 @@
                     <v-btn
                       text
                       block
-                      @click="$router.push('/greeting')"
                     >
-                      인사말
+                      <router-link class="route" to="/greeting">
+                        인사말
+                      </router-link>
                     </v-btn>
                   </v-card-actions>
                   <v-divider class="mx-2"></v-divider>
@@ -35,10 +36,11 @@
                     <v-btn
                       text
                       block
-                      @click="$router.push('/profile')"
                       color="primary"
                     >
-                      관장프로필
+                      <router-link class="route" to="/profile">
+                        관장프로필
+                      </router-link>
                     </v-btn>
                   </v-card-actions>
                 </v-card>
@@ -81,5 +83,12 @@ export default {
 .b {
   display: table-cell;
   vertical-align: middle;
+}
+.card-color {
+  background-color:#968770
+}
+.route {
+  text-decoration: none;
+  color: inherit;
 }
 </style>

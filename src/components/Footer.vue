@@ -3,8 +3,6 @@
     <v-footer
       dark
       padless
-      app
-      absolute
     >
       <v-card
         flat

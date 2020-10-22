@@ -14,9 +14,17 @@
     </template>
 
     <v-spacer></v-spacer>
-    <v-toolbar-title class="ho" @click="$router.push('/greeting')">파워줄넘기</v-toolbar-title>
+    <v-toolbar-title class="ho">
+      <router-link class="route" to="/greeting">
+        파워줄넘기
+      </router-link>
+    </v-toolbar-title>
     <v-spacer></v-spacer>
-    <v-toolbar-title class="ho">실내전경</v-toolbar-title>
+    <v-toolbar-title class="ho">
+      <router-link class="route" to="/indoor">
+        실내전경
+      </router-link>
+    </v-toolbar-title>
     <v-spacer></v-spacer>
 
     <v-menu
@@ -55,9 +63,10 @@
       icon
       color="primary"
       style="margin-right:30px"
-      @click="$router.push('/')"
     >
-      메인으로
+      <router-link to="/" class="route">
+        메인으로
+      </router-link>
     </v-btn>
     <info-dialog />
     </v-app-bar>
@@ -113,5 +122,9 @@ span {
 }
 .ho:hover {
   color: blue;
+}
+.route {
+  text-decoration: none;
+  color: inherit;
 }
 </style>
