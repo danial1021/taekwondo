@@ -151,6 +151,7 @@
 <script>
 // @ is an alias to /src
 import FixedFooter from '@/components/layout/FixedFooter.vue'
+import axios from 'axios'
 
 export default {
   name: 'Indoor',
@@ -160,7 +161,17 @@ export default {
   },
 
   data: () => ({
-  })
+  }),
+
+  mounted () {
+    axios.get('http://localhost:3000/api/user')
+    .then((r) => {
+      console.log(r)
+    })
+    .catch((e) => {
+      console.error(e.message)
+    })
+  }
 }
 </script>
 
