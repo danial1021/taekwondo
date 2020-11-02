@@ -9,13 +9,14 @@
     style="width:100%;height:50vh;"/>
 </template>
 
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=${appkey}&libraries=drawing"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=`${process.env.VUE_APP_KAKAO_MAP}`&libraries=drawing"></script>
 <script>
 import VueDaumMap from 'vue-daum-map'
+
 export default {
     name: "Map",
     data: () => ({
-        appKey: '${appkey}', // 테스트용 appkey
+        appKey: `${process.env.VUE_APP_KAKAO_MAP}`, // 테스트용 appkey
         center: {lat: '35.129388', lng: '126.854593'}, // 지도의 중심 좌표
         level: 3, // 지도의 레벨(확대, 축소 정도),
         mapTypeId: VueDaumMap.MapTypeId.NORMAL, // 맵 타입
@@ -25,6 +26,9 @@ export default {
     }),
     components: {
         VueDaumMap
+    },
+    mounted () {
+        // console.log(process.env.VUE_APP_KAKAO_MAP)
     },
     methods: {
         // 지도가 로드 완료되면 load 이벤트 발생

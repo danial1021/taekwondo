@@ -4,6 +4,7 @@
       <v-col cols="12" class="hidden-sm-and-down"></v-col>
       <v-col cols="12" class="hidden-sm-and-down"></v-col>
       <v-col cols="12" class="hidden-sm-and-down"></v-col>
+      <h1 class="center">관리자 로그인</h1>
       <v-col cols="12" class="hidden-sm-and-down"></v-col>
       <v-row>
         <v-col md="1"></v-col>
@@ -55,5 +56,8 @@ export default {
 <style scoped>
 .right {
   float: right;
+}
+.center {
+  text-align: center;
 }
 </style>
