@@ -1,12 +1,14 @@
 import Koa from 'koa'
 import Router from 'koa-router'
-import { connect } from 'mongoose'
+import mongoose from 'mongoose'
 import signRouter from './routes/sign'
 
 const app = new Koa()
 const router = new Router()
+const { connect } = mongoose
+const cfg = require('../config/index')
 
-connect('mongodb://localhost:27017/taekwondo',
+connect(cfg.dbUrl,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -36,5 +38,5 @@ app.on('error', async (ctx, next) => {
 })
 
 app.listen(4000, () => {
-  console.log('Koa server is listening!')
+  console.log('Taekwondo server is listening to port ' + 4000)
 })
