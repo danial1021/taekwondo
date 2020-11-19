@@ -161,17 +161,7 @@ export default {
   },
 
   data: () => ({
-  }),
-
-  mounted () {
-    this.$http.get('http://localhost:3000/user')
-      .then((r) => {
-        console.log(r)
-      })
-      .catch((e) => {
-        console.error(e.message)
-      })
-  }
+  })
 }
 </script>
 

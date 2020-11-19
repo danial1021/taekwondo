@@ -31,7 +31,7 @@
 
         <v-col cols="12" md="1" class="hidden-sm-and-down"></v-col>
         <v-col cols="12" md="10">
-          <v-btn class="right" color="info" large block>
+          <v-btn class="right" color="info" large block @click="send">
             LOGIN
           </v-btn>
         </v-col>
@@ -49,7 +49,21 @@ export default {
   data: () => ({
     id: '',
     pw: ''
-  })
+  }),
+
+  methods: {
+    send () {
+      const id = this.id
+      const pw = this.pw
+      this.$http.post('/user', { id, pw })
+        .then((r) => {
+          console.log(r.data)
+        })
+        .catch((e) => {
+          console.error(e.message)
+        })
+    }
+  }
 }
 </script>
 
