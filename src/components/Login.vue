@@ -53,9 +53,9 @@ export default {
 
   methods: {
     send () {
-      const id = this.id
+      const id = this.id // id 역할을 함
       const pw = this.pw
-      this.$http.post('/user', { id, pw })
+      this.$http.post('/user/login', { id, pw })
         .then((r) => {
           console.log(r.data)
         })
