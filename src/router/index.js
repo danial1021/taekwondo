@@ -1,11 +1,36 @@
+// module
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import axios from 'axios'
+import store from '../store'
+
+// components
 import Home from '../views/Home.vue'
 import Profile from '../views/Profile.vue'
 import Greeting from '../views/Greeting.vue'
 import Indoor from '../views/Indoor.vue'
 import Come from '../views/Come.vue'
 import AdminLogin from '../views/AdminLogin.vue'
+import test from '../views/test.vue'
+
+const requireAuth = (to, from, next) => {
+  axios.post('/token/verify', { token: store.state.token })
+    .then(resp => {
+      const tokenVal = resp.data.success
+      console.log(tokenVal)
+      if (tokenVal === true) return next()
+      else { // false
+        store.dispatch('logout')
+          .then(() => {
+            next('/admin')
+          })
+        console.log(store.getters.isAuthenticated)
+      }
+    })
+    .catch(err => {
+      console.log(err.message)
+    })
+}
 
 Vue.use(VueRouter)
 
@@ -14,6 +39,13 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    // 로그인 여부에 따른 페이지 접속 테스트
+    path: '/test',
+    name: 'test',
+    component: test,
+    beforeEnter: requireAuth
   },
   {
     path: '/profile',

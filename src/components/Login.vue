@@ -31,7 +31,7 @@
 
         <v-col cols="12" md="1" class="hidden-sm-and-down"></v-col>
         <v-col cols="12" md="10">
-          <v-btn class="right" color="info" large block @click="send">
+          <v-btn class="right" color="info" large block @click="login">
             LOGIN
           </v-btn>
         </v-col>
@@ -52,16 +52,17 @@ export default {
   }),
 
   methods: {
-    send () {
-      const id = this.id // id 역할을 함
-      const pw = this.pw
-      this.$http.post('/user/login', { id, pw })
-        .then((r) => {
-          console.log(r.data)
+    login () {
+      const id = this.id
+      const password = this.pw
+      console.log(id)
+      console.log(password)
+
+      this.$store.dispatch('login', { id, password })
+        .then(() => {
+          this.$router.push('/')
         })
-        .catch((e) => {
-          console.error(e.message)
-        })
+        .catch(err => console.log(err))
     }
   }
 }
